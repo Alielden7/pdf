@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>قارئ PDF صوتي</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>📖 حول كتاب PDF إلى صوت</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdf" accept="application/pdf" required><br><br>
+    <label>اختر اللهجة:</label>
+    <select name="voice">
+      <option value="ar-eg">عربي مصري</option>
+      <option value="ar-sa">عربي سعودي</option>
+    </select><br><br>
+    <button type="submit">🎧 تحويل إلى صوت</button>
+  </form>
+</body>
+</html>
